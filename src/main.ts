@@ -24,7 +24,10 @@ controlContainer.onmouseup = (event) => {
   event.stopPropagation();
 };
 
-document.body.insertBefore(app.view as HTMLCanvasElement, controlContainer);
+document
+  .getElementsByTagName("main")
+  ?.item(0)
+  ?.insertBefore(app.view as HTMLCanvasElement, controlContainer);
 
 app.stage.eventMode = "static";
 app.stage.hitArea = app.screen;

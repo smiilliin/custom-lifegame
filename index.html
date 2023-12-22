@@ -74,42 +74,44 @@
     </style>
   </head>
   <body>
-    <p id="show">[show]</p>
-    <div id="control-container">
-      <div>
-        <p>Live</p>
-        <input type="button" value="1" id="live-1" class="disabled" />
-        <input type="button" value="2" id="live-2" class="enabled" />
-        <input type="button" value="3" id="live-3" class="enabled" />
-        <input type="button" value="4" id="live-4" class="disabled" />
-        <input type="button" value="5" id="live-5" class="disabled" />
-        <input type="button" value="6" id="live-6" class="disabled" />
-        <input type="button" value="7" id="live-7" class="disabled" />
-        <input type="button" value="8" id="live-8" class="disabled" />
+    <main>
+      <p id="show">[show]</p>
+      <div id="control-container">
+        <div>
+          <p>Live</p>
+          <input type="button" value="1" id="live-1" class="disabled" />
+          <input type="button" value="2" id="live-2" class="enabled" />
+          <input type="button" value="3" id="live-3" class="enabled" />
+          <input type="button" value="4" id="live-4" class="disabled" />
+          <input type="button" value="5" id="live-5" class="disabled" />
+          <input type="button" value="6" id="live-6" class="disabled" />
+          <input type="button" value="7" id="live-7" class="disabled" />
+          <input type="button" value="8" id="live-8" class="disabled" />
+        </div>
+        <div>
+          <p>Death</p>
+          <input type="button" value="1" id="death-1" class="disabled" />
+          <input type="button" value="2" id="death-2" class="disabled" />
+          <input type="button" value="3" id="death-3" class="enabled" />
+          <input type="button" value="4" id="death-4" class="disabled" />
+          <input type="button" value="5" id="death-5" class="disabled" />
+          <input type="button" value="6" id="death-6" class="disabled" />
+          <input type="button" value="7" id="death-7" class="disabled" />
+          <input type="button" value="8" id="death-8" class="disabled" />
+        </div>
+        <div>
+          <p id="tickSpeed">Tick speed(x1: 100ms): x1</p>
+          <input
+            type="range"
+            min="0.2"
+            max="10"
+            value="1"
+            step="0.01"
+            id="tickSpeedInput"
+          />
+        </div>
+        <p id="hide">[hide]</p>
       </div>
-      <div>
-        <p>Death</p>
-        <input type="button" value="1" id="death-1" class="disabled" />
-        <input type="button" value="2" id="death-2" class="disabled" />
-        <input type="button" value="3" id="death-3" class="enabled" />
-        <input type="button" value="4" id="death-4" class="disabled" />
-        <input type="button" value="5" id="death-5" class="disabled" />
-        <input type="button" value="6" id="death-6" class="disabled" />
-        <input type="button" value="7" id="death-7" class="disabled" />
-        <input type="button" value="8" id="death-8" class="disabled" />
-      </div>
-      <div>
-        <p id="tickSpeed">Tick speed(x1: 100ms): x1</p>
-        <input
-          type="range"
-          min="0.2"
-          max="10"
-          value="1"
-          step="0.01"
-          id="tickSpeedInput"
-        />
-      </div>
-      <p id="hide">[hide]</p>
-    </div>
+    </main>
   </body>
 </html>

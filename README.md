@@ -16,3 +16,11 @@ build
 ```bash
 npm run build
 ```
+
+### Control
+
+| Enter      | Mouse wheel move |
+| ---------- | ---------------- |
+| start tick | zoom in-out      |
+
+![ex.gif](./README/ex.gif)
